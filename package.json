@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node":">=20.10.0",
+    "npm": ">=10.2.4",
+    "yarn": "please use npm instead of yarn"
+  },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-dialog": "^1.0.5",
