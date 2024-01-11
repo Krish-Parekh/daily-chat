@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { supabaseServer } from "@/lib/supabase/server";
 import { LIMIT_MESSAGE } from "@/lib/constants";
 import { supabaseBrowser } from "@/lib/supabase/browser";
 import { generateFromTo } from "@/lib/utils";

@@ -28,6 +28,7 @@ export default function ChatPresence() {
           });
         }
       });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
   if (!user) {
     return <div className="h-3 w-1"></div>;
