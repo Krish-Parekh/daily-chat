@@ -19,14 +19,14 @@ interface MessageState {
     hasMore: boolean;
     page: number;
     messages: IMessage[];
-    addMessage: (message: IMessage) => void;
+    addMessage: (_message: IMessage) => void;
     actionMessage: IMessage | undefined;
-    setActionMessage: (message: IMessage | undefined) => void;
-    optimisticDeleteMessage: (messageId: string) => void;
-    optimisticEditMessage: (messageId: IMessage) => void;
+    setActionMessage: (_message: IMessage | undefined) => void;
+    optimisticDeleteMessage: (_messageId: string) => void;
+    optimisticEditMessage: (_messageId: IMessage) => void;
     optimisticIds: string[];
-    setOtpimisticId: (id: string) => void;
-    setMessages: (messages: IMessage[]) => void;
+    setOtpimisticId: (_id: string) => void;
+    setMessages: (_messages: IMessage[]) => void;
 }
 
 export const useMessage = create<MessageState>()((set) => ({
